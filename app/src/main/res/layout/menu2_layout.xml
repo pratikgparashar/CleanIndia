@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/menu2">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Events"
+    android:background="@drawable/oval"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request History"
+        android:id="@+id/requestHistory"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:background="@drawable/round"
+
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:id="@+id/reqname"
+        android:textSize="15dp"
+        android:layout_below="@+id/requestHistory"
+        android:layout_marginLeft ="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:id="@+id/reqdate"
+        android:textSize="15dp"
+        android:layout_below="@+id/reqname"
+        android:layout_alignLeft="@+id/reqname"
+        android:layout_alignStart="@+id/reqname"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elpased Time :"
+        android:id="@+id/reqTime"
+        android:textSize="15dp"
+        android:layout_below="@+id/reqdate"
+        android:layout_alignLeft="@+id/reqdate"
+        android:layout_alignStart="@+id/reqdate"></TextView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/reqImage"
+
+        android:layout_margin="40dp"
+        android:layout_below="@+id/reqdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/reqImage2"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/reqdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Status"
+        android:id="@+id/chksts"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/reqImage2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+</ScrollView>
